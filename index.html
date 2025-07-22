@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main>
+    <h1>Cadastro de Funcionário</h1>
+    <form action="salvar.php" method="POST">
+
+    <div class="Nome">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="">
+    </div>
+    <br>
+
+    <div class="sobrenome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="">
+    </div>
+    <br>
+
+    <div class="idade">
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade" placeholder="digite sua idade:">
+    </div>
+    <br>
+
+    <div class="celular">
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular" placeholder="(xx)xxxx-xxxxx">
+    </div>
+    <br>
+
+    <div class="principal">
+        <label for="principal">Principal:</label> 
+        <select id="principal" name="principal">
+            <option value="">Selecione:</option>
+            <option value="principal">Principal</option>
+            <option value="residencial">Residencial</option>
+        </select>
+    </div>
+    <br>
+
+    <div class="whatssap">
+        <label for="whatssap">WhatsApp:</label>
+        <select id="whatssap" name="whatssap">
+            <option value="">Selecione:</option>
+            <option value="sim">Sim</option> 
+            <option value="não">Não</option>
+        </select>      
+    </div>
+    <br>
+
+    <div class="E-mail">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+    </div>
+    <br>
+
+    <div class="corporativo">
+        <label for="corporativo">Corporativo:</label>
+        <select id="corporativo" name="corporativo">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="não">Não</option>
+        </select>
+    </div>
+    <br>
+
+    <button type="submit">Salvar</button>
+
+    </form>
+    </main>
+</body>
+</html>
